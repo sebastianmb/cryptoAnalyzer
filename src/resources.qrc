@@ -1,5 +1,12 @@
 <RCC>
   <qresource>
+    <file>images/barchart_black.png</file>
+    <file>images/barchart_white.png</file>
+    <file>images/linegraph_black.png</file>
+    <file>images/linegraph_white.png</file>
+    <file>images/logo.png</file>
+    <file>images/piechart_black.png</file>
+    <file>images/piechart_white.png</file>
     <file>images/image.png</file>
     <file>images/messages_white.png</file>
     <file>images/profile_white.png</file>

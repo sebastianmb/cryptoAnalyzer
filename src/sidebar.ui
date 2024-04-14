@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>872</width>
+    <width>962</width>
     <height>619</height>
    </rect>
   </property>
@@ -48,7 +48,7 @@ QPushButton{
 }
 
 QPushButton:checked{
-	background-color:#F5FAFE;
+	background-color:#F5FAFE;;
 	color:#1F95EF;
 	font-weight:bold;
 
@@ -517,13 +517,369 @@ QPushButton:checked{
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
          <widget class="QWidget" name="dashboard_page">
-          <widget class="QGroupBox" name="groupBox_form">
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>20</y>
+             <width>401</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: black;
+</string>
+           </property>
+           <property name="text">
+            <string>Most Popular Programming Languages</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>38</x>
+             <y>50</y>
+             <width>411</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: black;
+</string>
+           </property>
+           <property name="text">
+            <string>Some commonly recognized programming languages that frequently appear</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>80</y>
+             <width>181</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: black;
+</string>
+           </property>
+           <property name="text">
+            <string>In list of top languages include</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>120</y>
+             <width>631</width>
+             <height>42</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QWidget{
+	background-color: rgb(31, 149, 239);
+	border-radius:5px;
+}
+
+QPushButton{
+	height:30px;
+	border-radius:5px;
+	color:black;
+
+}
+
+QPushButton:checked{
+	background-color:#0056D2;
+	color:white;
+	font-weight:bold;
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QPushButton" name="piechart_btn">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Pie Chart</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/images/piechart_black.png</normaloff>
+                <normalon>:/images/piechart_white.png</normalon>:/images/piechart_black.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="linegraph_btn">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Line Graph</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/images/linegraph_black.png</normaloff>
+                <normalon>:/images/linegraph_white.png</normalon>:/images/linegraph_black.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="barchart_btn">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Bar Chart</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/images/barchart_black.png</normaloff>
+                <normalon>:/images/barchart_white.png</normalon>:/images/barchart_black.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QStackedWidget" name="stackedWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>190</y>
+             <width>631</width>
+             <height>321</height>
+            </rect>
+           </property>
+           <widget class="QWidget" name="page_3">
+            <widget class="QChartview" name="barchart_view">
+             <property name="geometry">
+              <rect>
+               <x>-10</x>
+               <y>-30</y>
+               <width>821</width>
+               <height>521</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page">
+            <widget class="QChartview" name="graphicsView">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>-9</y>
+               <width>341</width>
+               <height>331</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QWidget" name="">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>-10</y>
+               <width>281</width>
+               <height>161</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="1" column="0">
+               <widget class="QPushButton" name="update_chart_btn">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	background-color:#0056D2;
+	color:white;
+	border:none;
+	height:30px;
+	font-weight:bold;
+	border-radius:10px;
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>Update pie Chart</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="QLabel" name="label_12">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Java</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_10">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Python </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_11">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Javascript</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+</string>
+                    </property>
+                    <property name="text">
+                     <string>C#</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <item>
+                   <widget class="QLineEdit" name="java"/>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="python"/>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="javascript"/>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="csharp"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page_2">
+            <widget class="QChartview" name="linegraph_view">
+             <property name="geometry">
+              <rect>
+               <x>-30</x>
+               <y>-20</y>
+               <width>661</width>
+               <height>331</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="messages_page">
+          <widget class="QGroupBox" name="groupBox_buttons_2">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>260</y>
+             <width>671</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;</string>
+           </property>
+           <property name="title">
+            <string>Manage Data</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QPushButton" name="loadData_2">
+              <property name="text">
+               <string>Load Data</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="callData_2">
+              <property name="text">
+               <string>Extrac Data</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="uploadData_2">
+              <property name="text">
+               <string>Upload Data</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="deleteData_2">
+              <property name="text">
+               <string>Delete Data</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_form_2">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>631</width>
-             <height>250</height>
+             <width>681</width>
+             <height>251</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -533,164 +889,156 @@ QPushButton:checked{
            <property name="title">
             <string>Add New Trade</string>
            </property>
-           <widget class="QWidget" name="layoutWidget">
+           <widget class="QWidget" name="layoutWidget_2">
             <property name="geometry">
              <rect>
               <x>10</x>
               <y>26</y>
-              <width>619</width>
-              <height>214</height>
+              <width>651</width>
+              <height>187</height>
              </rect>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
              <item>
-              <layout class="QFormLayout" name="formLayout">
+              <layout class="QFormLayout" name="formLayout_3">
                <item row="0" column="0">
-                <widget class="QLabel" name="fechaLabel">
+                <widget class="QLabel" name="fechaLabel_2">
                  <property name="text">
-                  <string>Fecha</string>
+                  <string>Fecha (dd/mm/yyyy)</string>
                  </property>
                 </widget>
                </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="fecha_LineEdit_2"/>
+               </item>
                <item row="1" column="0">
-                <widget class="QLabel" name="kc_19_1_5Label">
+                <widget class="QLabel" name="kc_19_1_5Label_2">
                  <property name="text">
                   <string>kc_19_1_5</string>
                  </property>
                 </widget>
                </item>
                <item row="1" column="1">
-                <widget class="QLineEdit" name="kc_19_1_5LineEdit"/>
+                <widget class="QLineEdit" name="kc_19_1_5LineEdit_2"/>
                </item>
                <item row="2" column="0">
-                <widget class="QLabel" name="ema_12Label">
+                <widget class="QLabel" name="ema_12Label_2">
                  <property name="text">
                   <string>ema_12</string>
                  </property>
                 </widget>
                </item>
                <item row="2" column="1">
-                <widget class="QLineEdit" name="ema_12LineEdit"/>
+                <widget class="QLineEdit" name="ema_12LineEdit_2"/>
                </item>
                <item row="3" column="0">
-                <widget class="QLabel" name="ema_24Label">
+                <widget class="QLabel" name="ema_24Label_2">
                  <property name="text">
                   <string>ema_24</string>
                  </property>
                 </widget>
                </item>
                <item row="3" column="1">
-                <widget class="QLineEdit" name="ema_24LineEdit"/>
+                <widget class="QLineEdit" name="ema_24LineEdit_2"/>
                </item>
                <item row="4" column="0">
-                <widget class="QLabel" name="rSILabel">
+                <widget class="QLabel" name="rSILabel_2">
                  <property name="text">
                   <string>RSI</string>
                  </property>
                 </widget>
                </item>
                <item row="4" column="1">
-                <widget class="QLineEdit" name="rsiLineEdit"/>
+                <widget class="QLineEdit" name="rsiLineEdit_2"/>
                </item>
                <item row="5" column="0">
-                <widget class="QLabel" name="sma_14Label">
+                <widget class="QLabel" name="sma_14Label_2">
                  <property name="text">
                   <string>sma_14</string>
                  </property>
                 </widget>
                </item>
                <item row="5" column="1">
-                <widget class="QLineEdit" name="sma_14LineEdit"/>
+                <widget class="QLineEdit" name="sma_14LineEdit_2"/>
                </item>
                <item row="6" column="0">
-                <widget class="QLabel" name="patronesVelaLabel">
+                <widget class="QLabel" name="patronesVelaLabel_2">
                  <property name="text">
                   <string>patrones vela</string>
                  </property>
                 </widget>
                </item>
                <item row="6" column="1">
-                <widget class="QLineEdit" name="patronesVelaLineEdit"/>
-               </item>
-               <item row="0" column="1">
-                <widget class="QDateTimeEdit" name="fechaLineEdit">
-                 <property name="date">
-                  <date>
-                   <year>2024</year>
-                   <month>1</month>
-                   <day>1</day>
-                  </date>
-                 </property>
-                </widget>
+                <widget class="QLineEdit" name="patronesVelaLineEdit_2"/>
                </item>
               </layout>
              </item>
              <item>
-              <layout class="QFormLayout" name="formLayout_2">
+              <layout class="QFormLayout" name="formLayout_4">
                <item row="0" column="0">
-                <widget class="QLabel" name="volumenOperacionesLabel">
+                <widget class="QLabel" name="volumenOperacionesLabel_2">
                  <property name="text">
                   <string>Volumen operaciones</string>
                  </property>
                 </widget>
                </item>
                <item row="0" column="1">
-                <widget class="QLineEdit" name="volumenOperacionesLineEdit"/>
+                <widget class="QLineEdit" name="volumenOperacionesLineEdit_2"/>
                </item>
                <item row="1" column="0">
-                <widget class="QLabel" name="nSoporteResistenciaLabel">
+                <widget class="QLabel" name="nSoporteResistenciaLabel_2">
                  <property name="text">
                   <string>N Soporte/Resistencia</string>
                  </property>
                 </widget>
                </item>
                <item row="1" column="1">
-                <widget class="QLineEdit" name="nSoporteResistenciaLineEdit"/>
+                <widget class="QLineEdit" name="nSoporteResistenciaLineEdit_2"/>
                </item>
                <item row="2" column="0">
-                <widget class="QLabel" name="indicadorVolumenLabel">
+                <widget class="QLabel" name="indicadorVolumenLabel_2">
                  <property name="text">
                   <string>Indicador volumen</string>
                  </property>
                 </widget>
                </item>
                <item row="2" column="1">
-                <widget class="QLineEdit" name="indicadorVolumenLineEdit"/>
+                <widget class="QLineEdit" name="indicadorVolumenLineEdit_2"/>
                </item>
                <item row="3" column="0">
-                <widget class="QLabel" name="analisisDireccionMercadoLabel">
+                <widget class="QLabel" name="analisisDireccionMercadoLabel_2">
                  <property name="text">
                   <string>Anàlisis direcciòn mercado</string>
                  </property>
                 </widget>
                </item>
                <item row="3" column="1">
-                <widget class="QLineEdit" name="analisisDireccionMercadoLineEdit"/>
+                <widget class="QLineEdit" name="analisisDireccionMercadoLineEdit_2"/>
                </item>
                <item row="4" column="0">
-                <widget class="QLabel" name="direcciNMercadoLabel">
+                <widget class="QLabel" name="direcciNMercadoLabel_2">
                  <property name="text">
                   <string>Direcciòn mercado</string>
                  </property>
                 </widget>
                </item>
                <item row="4" column="1">
-                <widget class="QLineEdit" name="direccionMercadoLineEdit"/>
+                <widget class="QLineEdit" name="direccionMercadoLineEdit_2"/>
                </item>
                <item row="5" column="0">
-                <widget class="QLabel" name="cambioPorcentualLabel">
+                <widget class="QLabel" name="cambioPorcentualLabel_2">
                  <property name="text">
                   <string>cambio porcentual</string>
                  </property>
                 </widget>
                </item>
                <item row="5" column="1">
-                <widget class="QLineEdit" name="cambioPorcentualLineEdit"/>
+                <widget class="QLineEdit" name="cambioPorcentualLineEdit_2"/>
                </item>
               </layout>
              </item>
              <item>
-              <spacer name="horizontalSpacer_3">
+              <spacer name="horizontalSpacer_4">
                <property name="orientation">
                 <enum>Qt::Orientation::Horizontal</enum>
                </property>
@@ -703,7 +1051,7 @@ QPushButton:checked{
               </spacer>
              </item>
              <item>
-              <widget class="QPushButton" name="addNew">
+              <widget class="QPushButton" name="addNew_2">
                <property name="text">
                 <string>Add new tarde</string>
                </property>
@@ -712,12 +1060,12 @@ QPushButton:checked{
             </layout>
            </widget>
           </widget>
-          <widget class="QTableWidget" name="table">
+          <widget class="QTableWidget" name="table_2">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>350</y>
-             <width>631</width>
+             <width>681</width>
              <height>201</height>
             </rect>
            </property>
@@ -757,7 +1105,7 @@ QPushButton:checked{
            </attribute>
            <column>
             <property name="text">
-             <string>Fecha</string>
+             <string>Fecha (dd/mm/yyyy)</string>
             </property>
            </column>
            <column>
@@ -787,12 +1135,12 @@ QPushButton:checked{
            </column>
            <column>
             <property name="text">
-             <string>Volumen operaciones</string>
+             <string>Patrones vela</string>
             </property>
            </column>
            <column>
             <property name="text">
-             <string>Patrones vela</string>
+             <string>Volumen operaciones</string>
             </property>
            </column>
            <column>
@@ -820,76 +1168,6 @@ QPushButton:checked{
              <string>Cambio porcentual</string>
             </property>
            </column>
-          </widget>
-          <widget class="QGroupBox" name="groupBox_buttons">
-           <property name="geometry">
-            <rect>
-             <x>9</x>
-             <y>260</y>
-             <width>631</width>
-             <height>81</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:black;</string>
-           </property>
-           <property name="title">
-            <string>Manage Data</string>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_6">
-            <item>
-             <widget class="QPushButton" name="loadData">
-              <property name="text">
-               <string>Load Data</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="callData">
-              <property name="text">
-               <string>Extrac Data</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="uploadData">
-              <property name="text">
-               <string>Upload Data</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="deleteData">
-              <property name="text">
-               <string>Delete Data</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="QWidget" name="messages_page">
-          <widget class="QLabel" name="label_5">
-           <property name="geometry">
-            <rect>
-             <x>190</x>
-             <y>190</y>
-             <width>221</width>
-             <height>121</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:black;
-</string>
-           </property>
-           <property name="text">
-            <string>Messages Page</string>
-           </property>
           </widget>
          </widget>
          <widget class="QWidget" name="notifications_page">
@@ -970,8 +1248,59 @@ QPushButton:checked{
      </widget>
     </item>
    </layout>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2"/>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3"/>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4"/>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5"/>
+   </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartview</class>
+   <extends>QGraphicsView</extends>
+   <header>qchartview.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="resources.qrc"/>
  </resources>

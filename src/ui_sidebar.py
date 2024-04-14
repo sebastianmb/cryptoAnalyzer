@@ -15,18 +15,18 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QDateTimeEdit, QFormLayout, QGridLayout,
-    QGroupBox, QHBoxLayout, QHeaderView, QLabel,
-    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QSpacerItem, QStackedWidget, QTableWidget, QTableWidgetItem,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QFormLayout, QGridLayout, QGroupBox,
+    QHBoxLayout, QHeaderView, QLabel, QLineEdit,
+    QMainWindow, QPushButton, QSizePolicy, QSpacerItem,
+    QStackedWidget, QTableWidget, QTableWidgetItem, QVBoxLayout,
+    QWidget)
 import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(872, 619)
+        MainWindow.resize(962, 619)
         MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -322,12 +322,12 @@ class Ui_MainWindow(object):
         self.dashboard_page.setObjectName(u"dashboard_page")
         self.groupBox_form = QGroupBox(self.dashboard_page)
         self.groupBox_form.setObjectName(u"groupBox_form")
-        self.groupBox_form.setGeometry(QRect(0, 0, 631, 250))
+        self.groupBox_form.setGeometry(QRect(0, 0, 681, 251))
         self.groupBox_form.setStyleSheet(u"color:black;\n"
 "")
         self.layoutWidget = QWidget(self.groupBox_form)
         self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(10, 26, 619, 214))
+        self.layoutWidget.setGeometry(QRect(10, 26, 651, 187))
         self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -337,6 +337,11 @@ class Ui_MainWindow(object):
         self.fechaLabel.setObjectName(u"fechaLabel")
 
         self.formLayout.setWidget(0, QFormLayout.LabelRole, self.fechaLabel)
+
+        self.fecha_LineEdit = QLineEdit(self.layoutWidget)
+        self.fecha_LineEdit.setObjectName(u"fecha_LineEdit")
+
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.fecha_LineEdit)
 
         self.kc_19_1_5Label = QLabel(self.layoutWidget)
         self.kc_19_1_5Label.setObjectName(u"kc_19_1_5Label")
@@ -397,11 +402,6 @@ class Ui_MainWindow(object):
         self.patronesVelaLineEdit.setObjectName(u"patronesVelaLineEdit")
 
         self.formLayout.setWidget(6, QFormLayout.FieldRole, self.patronesVelaLineEdit)
-
-        self.fechaLineEdit = QDateTimeEdit(self.layoutWidget)
-        self.fechaLineEdit.setObjectName(u"fechaLineEdit")
-
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.fechaLineEdit)
 
 
         self.horizontalLayout_5.addLayout(self.formLayout)
@@ -510,7 +510,7 @@ class Ui_MainWindow(object):
         __qtablewidgetitem12 = QTableWidgetItem()
         self.table.setHorizontalHeaderItem(12, __qtablewidgetitem12)
         self.table.setObjectName(u"table")
-        self.table.setGeometry(QRect(0, 350, 631, 201))
+        self.table.setGeometry(QRect(0, 350, 681, 201))
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -528,7 +528,7 @@ class Ui_MainWindow(object):
         self.table.verticalHeader().setStretchLastSection(False)
         self.groupBox_buttons = QGroupBox(self.dashboard_page)
         self.groupBox_buttons.setObjectName(u"groupBox_buttons")
-        self.groupBox_buttons.setGeometry(QRect(9, 260, 631, 81))
+        self.groupBox_buttons.setGeometry(QRect(9, 260, 671, 81))
         self.groupBox_buttons.setStyleSheet(u"color:black;")
         self.horizontalLayout_6 = QHBoxLayout(self.groupBox_buttons)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
@@ -639,7 +639,7 @@ class Ui_MainWindow(object):
         self.pushButton_20.setText("")
         self.pushButton_21.setText("")
         self.groupBox_form.setTitle(QCoreApplication.translate("MainWindow", u"Add New Trade", None))
-        self.fechaLabel.setText(QCoreApplication.translate("MainWindow", u"Fecha", None))
+        self.fechaLabel.setText(QCoreApplication.translate("MainWindow", u"Fecha (dd/mm/yyyy)", None))
         self.kc_19_1_5Label.setText(QCoreApplication.translate("MainWindow", u"kc_19_1_5", None))
         self.ema_12Label.setText(QCoreApplication.translate("MainWindow", u"ema_12", None))
         self.ema_24Label.setText(QCoreApplication.translate("MainWindow", u"ema_24", None))
@@ -654,7 +654,7 @@ class Ui_MainWindow(object):
         self.cambioPorcentualLabel.setText(QCoreApplication.translate("MainWindow", u"cambio porcentual", None))
         self.addNew.setText(QCoreApplication.translate("MainWindow", u"Add new tarde", None))
         ___qtablewidgetitem = self.table.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Fecha", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Fecha (dd/mm/yyyy)", None));
         ___qtablewidgetitem1 = self.table.horizontalHeaderItem(1)
         ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"kc_19_1_5", None));
         ___qtablewidgetitem2 = self.table.horizontalHeaderItem(2)
@@ -666,9 +666,9 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem5 = self.table.horizontalHeaderItem(5)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"sma_14", None));
         ___qtablewidgetitem6 = self.table.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Volumen operaciones", None));
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Patrones vela", None));
         ___qtablewidgetitem7 = self.table.horizontalHeaderItem(7)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Patrones vela", None));
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Volumen operaciones", None));
         ___qtablewidgetitem8 = self.table.horizontalHeaderItem(8)
         ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"N Soporte/Resistencia", None));
         ___qtablewidgetitem9 = self.table.horizontalHeaderItem(9)
@@ -689,3 +689,4 @@ class Ui_MainWindow(object):
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Settings Page", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Profile Page", None))
     # retranslateUi
+

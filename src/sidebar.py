@@ -2,8 +2,8 @@ import sqlite3
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import *
 from ui_sidebar import Ui_MainWindow
-from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget,QDateTimeEdit
-from PySide6.QtCore import QDateTime, Qt
+from PySide6.QtWidgets import QMainWindow
+
 
 
 class MySideBar(QMainWindow,Ui_MainWindow):
@@ -49,10 +49,10 @@ class MySideBar(QMainWindow,Ui_MainWindow):
     def add_new_data(self):
         # Crear un cursor para ejecutar comandos SQL
         self.cursor=self.create_connection().cursor()
-        self.cursor.execute("CREATE TABLE IF NOT EXISTS Datos_Trading (id INTEGER PRIMARY KEY,fecha DATETIME, kc_19_1_5 text, ema_12 text, ema_24 text, rsi text, sma_14 text, volumen_operaciones text, patrones_velas text, niveles_soporte_resistencia text, indicador_volumen text, analisis_direccion_mercado text, direccion_mercado_pasado_tiempo text, cambio_porcentual text )")
+        self.cursor.execute("CREATE TABLE IF NOT EXISTS Datos_Trading (id INTEGER PRIMARY KEY , fecha text, kc_19_1_5 text, ema_12 text, ema_24 text, rsi text, sma_14 text, volumen_operaciones text, patrones_velas text, niveles_soporte_resistencia text, indicador_volumen text, analisis_direccion_mercado text, direccion_mercado_pasado_tiempo text, cambio_porcentual text )")
         self.new_trade = [
-                #None,   #id (será generado automáticamente al insertar en la base de datos)
-                self.fechaLineEdit.dateTime().toString("yyyy-MM-dd HH:mm:ss"),  # Fecha y hora de la operación obtenida del QLineEdit
+                
+                self.fecha_LineEdit.text(),  # Fecha y hora de la operación obtenida del QLineEdit
                 self.kc_19_1_5LineEdit.text(),  # Valor del indicador Keltner Channel obtenido del QLineEdit
                 self.ema_12LineEdit.text(),  # Valor de la media móvil exponencial con período 12 obtenido del QLineEdit
                 self.ema_24LineEdit.text(),  # Valor de la media móvil exponencial con período 24 obtenido del QLineEdit
@@ -75,7 +75,7 @@ class MySideBar(QMainWindow,Ui_MainWindow):
         self.connection.commit()
         self.connection.close()
         # Clear line edit text
-        self.fechaLineEdit.clear() 
+        self.fecha_LineEdit.clear() 
         self.kc_19_1_5LineEdit.clear()
         self.ema_12LineEdit.clear()  
         self.ema_24LineEdit.clear()  
@@ -101,6 +101,9 @@ class MySideBar(QMainWindow,Ui_MainWindow):
         print("Number of rows: ",results[0])
         self.table.setRowCount(results[0])
 
+
+
+
         #Add employees from table to Qtable
         table_row=0
 
@@ -121,13 +124,13 @@ class MySideBar(QMainWindow,Ui_MainWindow):
             
            
             table_row = table_row+1 
-
+       
     def call_data(self):
         current_row_index=self.table.currentRow()
         
         
         #Call employee details and assignto variable
-        self.fecha_edit=str(self.table.item(current_row_index,0).text())       
+        self.fecha_edit = str(self.table.item(current_row_index, 0).text())       
         self.kc_19_1_5_edit=str(self.table.item(current_row_index,1).text())
         self.ema_12_edit=str(self.table.item(current_row_index,2).text())
         self.ema_24_edit=str(self.table.item(current_row_index,3).text())
@@ -145,17 +148,8 @@ class MySideBar(QMainWindow,Ui_MainWindow):
         #Change QLine edits to above variables
        
         # Estableciendo el formato de la cadena de fecha y hora
-        formato = "d/MM/yyyy h:mm AP"
         
-        # Convertir la cadena de fecha en un QDateTime
-        fecha_dt = QDateTime.fromString(self.fecha_edit, formato)
-        
-        # Estableciendo la fecha en QDateTimeEdit solo si está vacío
-        if self.fechaLineEdit.text() == "":
-            self.fechaLineEdit.setDateTime(fecha_dt)
-        
-        # Estableciendo el QDateTimeEdit en el QLineEdit
-        
+        self.fecha_LineEdit.setText(self.fecha_edit)
         self.kc_19_1_5LineEdit.setText(self.kc_19_1_5_edit)
         self.ema_12LineEdit.setText(self.ema_12_edit)
         self.ema_24LineEdit.setText(self.ema_24_edit)
@@ -174,7 +168,7 @@ class MySideBar(QMainWindow,Ui_MainWindow):
         #Get current text from QlineEdits
 
         params=(
-            self.fechaLineEdit.text(),  
+            self.fecha_LineEdit.text(),  
             self.kc_19_1_5LineEdit.text(),  
             self.ema_12LineEdit.text(), 
             self.ema_24LineEdit.text(),  
@@ -187,7 +181,7 @@ class MySideBar(QMainWindow,Ui_MainWindow):
             self.analisisDireccionMercadoLineEdit.text(),  
             self.direccionMercadoLineEdit.text(), 
             self.cambioPorcentualLineEdit.text(),
-            self.fechaLineEdit.text()
+            self.fecha_LineEdit.text()
                  
             
         )
@@ -196,11 +190,11 @@ class MySideBar(QMainWindow,Ui_MainWindow):
 
         self.cursor.execute("UPDATE Datos_Trading SET fecha = ?, kc_19_1_5 = ?, ema_12 = ?, ema_24 = ?, rsi = ?, sma_14 = ?, volumen_operaciones = ?, patrones_velas = ?, niveles_soporte_resistencia = ?, indicador_volumen = ?, analisis_direccion_mercado = ?, direccion_mercado_pasado_tiempo = ?, cambio_porcentual = ? WHERE fecha = ?", params)
         print("The old date was ", self.fecha_edit)
-        print("The new daye is ", self.fechaLineEdit.text())
+        print("The new daye is ", self.fecha_LineEdit.text())
 
         #Clear LineEdit Text 
 
-        self.fechaLineEdit.clear() 
+        self.fecha_LineEdit.clear() 
         self.kc_19_1_5LineEdit.clear()
         self.ema_12LineEdit.clear()  
         self.ema_24LineEdit.clear()  
