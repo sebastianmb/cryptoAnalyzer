@@ -516,99 +516,7 @@ QPushButton:checked{
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
-         <widget class="QWidget" name="dashboard_page">
-          <widget class="QLabel" name="label_4">
-           <property name="geometry">
-            <rect>
-             <x>40</x>
-             <y>20</y>
-             <width>401</width>
-             <height>16</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>15</pointsize>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: black;
-</string>
-           </property>
-           <property name="text">
-            <string>Most Popular Programming Languages</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="label_5">
-           <property name="geometry">
-            <rect>
-             <x>38</x>
-             <y>50</y>
-             <width>411</width>
-             <height>20</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: black;
-</string>
-           </property>
-           <property name="text">
-            <string>Some commonly recognized programming languages that frequently appear</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="label_9">
-           <property name="geometry">
-            <rect>
-             <x>40</x>
-             <y>80</y>
-             <width>181</width>
-             <height>20</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: black;
-</string>
-           </property>
-           <property name="text">
-            <string>In list of top languages include</string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QWidget" name="profile_page">
-          <widget class="QLabel" name="label_7">
-           <property name="geometry">
-            <rect>
-             <x>240</x>
-             <y>170</y>
-             <width>151</width>
-             <height>121</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:black;
-</string>
-           </property>
-           <property name="text">
-            <string>Profile Page</string>
-           </property>
-          </widget>
-         </widget>
+         <widget class="QWidget" name="dashboard_page"/>
          <widget class="QWidget" name="messages_page">
           <widget class="QGroupBox" name="groupBox_buttons_2">
            <property name="geometry">
@@ -694,139 +602,129 @@ QPushButton:checked{
                <item row="0" column="1">
                 <widget class="QLineEdit" name="fecha_LineEdit_2"/>
                </item>
-               <item row="2" column="0">
+               <item row="1" column="0">
                 <widget class="QLabel" name="kc_19_1_5Label_2">
                  <property name="text">
                   <string>kc_19_1_5</string>
                  </property>
                 </widget>
                </item>
-               <item row="2" column="1">
+               <item row="1" column="1">
                 <widget class="QLineEdit" name="kc_19_1_5LineEdit_2"/>
                </item>
-               <item row="3" column="0">
+               <item row="2" column="0">
                 <widget class="QLabel" name="ema_12Label_2">
                  <property name="text">
                   <string>ema_12</string>
                  </property>
                 </widget>
                </item>
-               <item row="3" column="1">
+               <item row="2" column="1">
                 <widget class="QLineEdit" name="ema_12LineEdit_2"/>
                </item>
-               <item row="4" column="0">
+               <item row="3" column="0">
                 <widget class="QLabel" name="ema_24Label_2">
                  <property name="text">
                   <string>ema_24</string>
                  </property>
                 </widget>
                </item>
-               <item row="4" column="1">
+               <item row="3" column="1">
                 <widget class="QLineEdit" name="ema_24LineEdit_2"/>
                </item>
-               <item row="5" column="0">
+               <item row="4" column="0">
                 <widget class="QLabel" name="rSILabel_2">
                  <property name="text">
                   <string>RSI</string>
                  </property>
                 </widget>
                </item>
-               <item row="5" column="1">
+               <item row="4" column="1">
                 <widget class="QLineEdit" name="rsiLineEdit_2"/>
                </item>
-               <item row="6" column="0">
+               <item row="5" column="0">
                 <widget class="QLabel" name="sma_14Label_2">
                  <property name="text">
                   <string>sma_14</string>
                  </property>
                 </widget>
                </item>
-               <item row="6" column="1">
+               <item row="5" column="1">
                 <widget class="QLineEdit" name="sma_14LineEdit_2"/>
                </item>
-               <item row="1" column="0">
-                <widget class="QLabel" name="coin_2">
-                 <property name="text">
-                  <string>Coin</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QLineEdit" name="coin_LineEdit_2"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QFormLayout" name="formLayout_4">
-               <item row="1" column="0">
-                <widget class="QLabel" name="volumenOperacionesLabel_2">
-                 <property name="text">
-                  <string>Volumen operaciones</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QLineEdit" name="volumenOperacionesLineEdit_2"/>
-               </item>
-               <item row="2" column="0">
-                <widget class="QLabel" name="nSoporteResistenciaLabel_2">
-                 <property name="text">
-                  <string>N Soporte/Resistencia</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="1">
-                <widget class="QLineEdit" name="nSoporteResistenciaLineEdit_2"/>
-               </item>
-               <item row="3" column="0">
-                <widget class="QLabel" name="indicadorVolumenLabel_2">
-                 <property name="text">
-                  <string>Indicador volumen</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="1">
-                <widget class="QLineEdit" name="indicadorVolumenLineEdit_2"/>
-               </item>
-               <item row="4" column="0">
-                <widget class="QLabel" name="analisisDireccionMercadoLabel_2">
-                 <property name="text">
-                  <string>Anàlisis direcciòn mercado</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="1">
-                <widget class="QLineEdit" name="analisisDireccionMercadoLineEdit_2"/>
-               </item>
-               <item row="5" column="0">
-                <widget class="QLabel" name="direcciNMercadoLabel_2">
-                 <property name="text">
-                  <string>Direcciòn mercado</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="5" column="1">
-                <widget class="QLineEdit" name="direccionMercadoLineEdit_2"/>
-               </item>
                <item row="6" column="0">
-                <widget class="QLabel" name="cambioPorcentualLabel_2">
-                 <property name="text">
-                  <string>cambio porcentual</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="6" column="1">
-                <widget class="QLineEdit" name="cambioPorcentualLineEdit_2"/>
-               </item>
-               <item row="0" column="0">
                 <widget class="QLabel" name="patronesVelaLabel_2">
                  <property name="text">
                   <string>patrones vela</string>
                  </property>
                 </widget>
                </item>
-               <item row="0" column="1">
+               <item row="6" column="1">
                 <widget class="QLineEdit" name="patronesVelaLineEdit_2"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QFormLayout" name="formLayout_4">
+               <item row="0" column="0">
+                <widget class="QLabel" name="volumenOperacionesLabel_2">
+                 <property name="text">
+                  <string>Volumen operaciones</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="volumenOperacionesLineEdit_2"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="nSoporteResistenciaLabel_2">
+                 <property name="text">
+                  <string>N Soporte/Resistencia</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="nSoporteResistenciaLineEdit_2"/>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="indicadorVolumenLabel_2">
+                 <property name="text">
+                  <string>Indicador volumen</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="indicadorVolumenLineEdit_2"/>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="analisisDireccionMercadoLabel_2">
+                 <property name="text">
+                  <string>Anàlisis direcciòn mercado</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="analisisDireccionMercadoLineEdit_2"/>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="direcciNMercadoLabel_2">
+                 <property name="text">
+                  <string>Direcciòn mercado</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="direccionMercadoLineEdit_2"/>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="cambioPorcentualLabel_2">
+                 <property name="text">
+                  <string>cambio porcentual</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QLineEdit" name="cambioPorcentualLineEdit_2"/>
                </item>
               </layout>
              </item>
@@ -876,7 +774,7 @@ QPushButton:checked{
             <number>0</number>
            </property>
            <property name="columnCount">
-            <number>14</number>
+            <number>13</number>
            </property>
            <attribute name="horizontalHeaderVisible">
             <bool>true</bool>
@@ -899,11 +797,6 @@ QPushButton:checked{
            <column>
             <property name="text">
              <string>Fecha (dd/mm/yyyy)</string>
-            </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>Coin</string>
             </property>
            </column>
            <column>
@@ -1013,6 +906,30 @@ QPushButton:checked{
            </property>
            <property name="text">
             <string>Settings Page</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="profile_page">
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>170</y>
+             <width>151</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+</string>
+           </property>
+           <property name="text">
+            <string>Profile Page</string>
            </property>
           </widget>
          </widget>
@@ -1271,8 +1188,8 @@ QPushButton:checked{
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>28</x>
-     <y>578</y>
+     <x>37</x>
+     <y>609</y>
     </hint>
     <hint type="destinationlabel">
      <x>35</x>
@@ -1287,8 +1204,8 @@ QPushButton:checked{
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>122</x>
-     <y>573</y>
+     <x>197</x>
+     <y>609</y>
     </hint>
     <hint type="destinationlabel">
      <x>140</x>

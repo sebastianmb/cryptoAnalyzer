@@ -30,6 +30,30 @@ class Ui_MainWindow(object):
         MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
+        self.layoutWidget = QWidget(self.centralwidget)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_2 = QGridLayout(self.layoutWidget)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.layoutWidget1 = QWidget(self.centralwidget)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_3 = QGridLayout(self.layoutWidget1)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.layoutWidget2 = QWidget(self.centralwidget)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_4 = QGridLayout(self.layoutWidget2)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.layoutWidget3 = QWidget(self.centralwidget)
+        self.layoutWidget3.setObjectName(u"layoutWidget3")
+        self.layoutWidget3.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_5 = QGridLayout(self.layoutWidget3)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
         self.gridLayout = QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
@@ -50,7 +74,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:checked{\n"
-"	background-color:#F5FAFE;\n"
+"	background-color:#F5FAFE;;\n"
 "	color:#1F95EF;\n"
 "	font-weight:bold;\n"
 "\n"
@@ -320,256 +344,294 @@ class Ui_MainWindow(object):
         self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.dashboard_page = QWidget()
         self.dashboard_page.setObjectName(u"dashboard_page")
-        self.groupBox_form = QGroupBox(self.dashboard_page)
-        self.groupBox_form.setObjectName(u"groupBox_form")
-        self.groupBox_form.setGeometry(QRect(0, 0, 681, 251))
-        self.groupBox_form.setStyleSheet(u"color:black;\n"
+        self.label_4 = QLabel(self.dashboard_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(40, 20, 401, 16))
+        font1 = QFont()
+        font1.setPointSize(15)
+        font1.setBold(True)
+        self.label_4.setFont(font1)
+        self.label_4.setStyleSheet(u"color: black;\n"
 "")
-        self.layoutWidget = QWidget(self.groupBox_form)
-        self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(10, 26, 651, 187))
-        self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget)
-        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.formLayout = QFormLayout()
-        self.formLayout.setObjectName(u"formLayout")
-        self.fechaLabel = QLabel(self.layoutWidget)
-        self.fechaLabel.setObjectName(u"fechaLabel")
+        self.label_5 = QLabel(self.dashboard_page)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(38, 50, 411, 20))
+        font2 = QFont()
+        font2.setPointSize(10)
+        self.label_5.setFont(font2)
+        self.label_5.setStyleSheet(u"color: black;\n"
+"")
+        self.label_9 = QLabel(self.dashboard_page)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setGeometry(QRect(40, 80, 181, 20))
+        self.label_9.setFont(font2)
+        self.label_9.setStyleSheet(u"color: black;\n"
+"")
+        self.stackedWidget.addWidget(self.dashboard_page)
+        self.profile_page = QWidget()
+        self.profile_page.setObjectName(u"profile_page")
+        self.label_7 = QLabel(self.profile_page)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setGeometry(QRect(240, 170, 151, 121))
+        font3 = QFont()
+        font3.setPointSize(20)
+        self.label_7.setFont(font3)
+        self.label_7.setStyleSheet(u"color:black;\n"
+"")
+        self.stackedWidget.addWidget(self.profile_page)
+        self.messages_page = QWidget()
+        self.messages_page.setObjectName(u"messages_page")
+        self.groupBox_buttons_2 = QGroupBox(self.messages_page)
+        self.groupBox_buttons_2.setObjectName(u"groupBox_buttons_2")
+        self.groupBox_buttons_2.setGeometry(QRect(9, 260, 671, 81))
+        self.groupBox_buttons_2.setStyleSheet(u"color:black;")
+        self.horizontalLayout_7 = QHBoxLayout(self.groupBox_buttons_2)
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.loadData_2 = QPushButton(self.groupBox_buttons_2)
+        self.loadData_2.setObjectName(u"loadData_2")
 
-        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.fechaLabel)
+        self.horizontalLayout_7.addWidget(self.loadData_2)
 
-        self.fecha_LineEdit = QLineEdit(self.layoutWidget)
-        self.fecha_LineEdit.setObjectName(u"fecha_LineEdit")
+        self.callData_2 = QPushButton(self.groupBox_buttons_2)
+        self.callData_2.setObjectName(u"callData_2")
 
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.fecha_LineEdit)
+        self.horizontalLayout_7.addWidget(self.callData_2)
 
-        self.kc_19_1_5Label = QLabel(self.layoutWidget)
-        self.kc_19_1_5Label.setObjectName(u"kc_19_1_5Label")
+        self.uploadData_2 = QPushButton(self.groupBox_buttons_2)
+        self.uploadData_2.setObjectName(u"uploadData_2")
 
-        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.kc_19_1_5Label)
+        self.horizontalLayout_7.addWidget(self.uploadData_2)
 
-        self.kc_19_1_5LineEdit = QLineEdit(self.layoutWidget)
-        self.kc_19_1_5LineEdit.setObjectName(u"kc_19_1_5LineEdit")
+        self.deleteData_2 = QPushButton(self.groupBox_buttons_2)
+        self.deleteData_2.setObjectName(u"deleteData_2")
 
-        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.kc_19_1_5LineEdit)
+        self.horizontalLayout_7.addWidget(self.deleteData_2)
 
-        self.ema_12Label = QLabel(self.layoutWidget)
-        self.ema_12Label.setObjectName(u"ema_12Label")
+        self.groupBox_form_2 = QGroupBox(self.messages_page)
+        self.groupBox_form_2.setObjectName(u"groupBox_form_2")
+        self.groupBox_form_2.setGeometry(QRect(0, 0, 681, 251))
+        self.groupBox_form_2.setStyleSheet(u"color:black;\n"
+"")
+        self.layoutWidget_2 = QWidget(self.groupBox_form_2)
+        self.layoutWidget_2.setObjectName(u"layoutWidget_2")
+        self.layoutWidget_2.setGeometry(QRect(10, 26, 651, 220))
+        self.horizontalLayout_8 = QHBoxLayout(self.layoutWidget_2)
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_3 = QFormLayout()
+        self.formLayout_3.setObjectName(u"formLayout_3")
+        self.fechaLabel_2 = QLabel(self.layoutWidget_2)
+        self.fechaLabel_2.setObjectName(u"fechaLabel_2")
 
-        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.ema_12Label)
+        self.formLayout_3.setWidget(0, QFormLayout.LabelRole, self.fechaLabel_2)
 
-        self.ema_12LineEdit = QLineEdit(self.layoutWidget)
-        self.ema_12LineEdit.setObjectName(u"ema_12LineEdit")
+        self.fecha_LineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.fecha_LineEdit_2.setObjectName(u"fecha_LineEdit_2")
 
-        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.ema_12LineEdit)
+        self.formLayout_3.setWidget(0, QFormLayout.FieldRole, self.fecha_LineEdit_2)
 
-        self.ema_24Label = QLabel(self.layoutWidget)
-        self.ema_24Label.setObjectName(u"ema_24Label")
+        self.kc_19_1_5Label_2 = QLabel(self.layoutWidget_2)
+        self.kc_19_1_5Label_2.setObjectName(u"kc_19_1_5Label_2")
 
-        self.formLayout.setWidget(3, QFormLayout.LabelRole, self.ema_24Label)
+        self.formLayout_3.setWidget(2, QFormLayout.LabelRole, self.kc_19_1_5Label_2)
 
-        self.ema_24LineEdit = QLineEdit(self.layoutWidget)
-        self.ema_24LineEdit.setObjectName(u"ema_24LineEdit")
+        self.kc_19_1_5LineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.kc_19_1_5LineEdit_2.setObjectName(u"kc_19_1_5LineEdit_2")
 
-        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.ema_24LineEdit)
+        self.formLayout_3.setWidget(2, QFormLayout.FieldRole, self.kc_19_1_5LineEdit_2)
 
-        self.rSILabel = QLabel(self.layoutWidget)
-        self.rSILabel.setObjectName(u"rSILabel")
+        self.ema_12Label_2 = QLabel(self.layoutWidget_2)
+        self.ema_12Label_2.setObjectName(u"ema_12Label_2")
 
-        self.formLayout.setWidget(4, QFormLayout.LabelRole, self.rSILabel)
+        self.formLayout_3.setWidget(3, QFormLayout.LabelRole, self.ema_12Label_2)
 
-        self.rsiLineEdit = QLineEdit(self.layoutWidget)
-        self.rsiLineEdit.setObjectName(u"rsiLineEdit")
+        self.ema_12LineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.ema_12LineEdit_2.setObjectName(u"ema_12LineEdit_2")
 
-        self.formLayout.setWidget(4, QFormLayout.FieldRole, self.rsiLineEdit)
+        self.formLayout_3.setWidget(3, QFormLayout.FieldRole, self.ema_12LineEdit_2)
 
-        self.sma_14Label = QLabel(self.layoutWidget)
-        self.sma_14Label.setObjectName(u"sma_14Label")
+        self.ema_24Label_2 = QLabel(self.layoutWidget_2)
+        self.ema_24Label_2.setObjectName(u"ema_24Label_2")
 
-        self.formLayout.setWidget(5, QFormLayout.LabelRole, self.sma_14Label)
+        self.formLayout_3.setWidget(4, QFormLayout.LabelRole, self.ema_24Label_2)
 
-        self.sma_14LineEdit = QLineEdit(self.layoutWidget)
-        self.sma_14LineEdit.setObjectName(u"sma_14LineEdit")
+        self.ema_24LineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.ema_24LineEdit_2.setObjectName(u"ema_24LineEdit_2")
 
-        self.formLayout.setWidget(5, QFormLayout.FieldRole, self.sma_14LineEdit)
+        self.formLayout_3.setWidget(4, QFormLayout.FieldRole, self.ema_24LineEdit_2)
 
-        self.patronesVelaLabel = QLabel(self.layoutWidget)
-        self.patronesVelaLabel.setObjectName(u"patronesVelaLabel")
+        self.rSILabel_2 = QLabel(self.layoutWidget_2)
+        self.rSILabel_2.setObjectName(u"rSILabel_2")
 
-        self.formLayout.setWidget(6, QFormLayout.LabelRole, self.patronesVelaLabel)
+        self.formLayout_3.setWidget(5, QFormLayout.LabelRole, self.rSILabel_2)
 
-        self.patronesVelaLineEdit = QLineEdit(self.layoutWidget)
-        self.patronesVelaLineEdit.setObjectName(u"patronesVelaLineEdit")
+        self.rsiLineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.rsiLineEdit_2.setObjectName(u"rsiLineEdit_2")
 
-        self.formLayout.setWidget(6, QFormLayout.FieldRole, self.patronesVelaLineEdit)
+        self.formLayout_3.setWidget(5, QFormLayout.FieldRole, self.rsiLineEdit_2)
 
+        self.sma_14Label_2 = QLabel(self.layoutWidget_2)
+        self.sma_14Label_2.setObjectName(u"sma_14Label_2")
 
-        self.horizontalLayout_5.addLayout(self.formLayout)
+        self.formLayout_3.setWidget(6, QFormLayout.LabelRole, self.sma_14Label_2)
 
-        self.formLayout_2 = QFormLayout()
-        self.formLayout_2.setObjectName(u"formLayout_2")
-        self.volumenOperacionesLabel = QLabel(self.layoutWidget)
-        self.volumenOperacionesLabel.setObjectName(u"volumenOperacionesLabel")
+        self.sma_14LineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.sma_14LineEdit_2.setObjectName(u"sma_14LineEdit_2")
 
-        self.formLayout_2.setWidget(0, QFormLayout.LabelRole, self.volumenOperacionesLabel)
+        self.formLayout_3.setWidget(6, QFormLayout.FieldRole, self.sma_14LineEdit_2)
 
-        self.volumenOperacionesLineEdit = QLineEdit(self.layoutWidget)
-        self.volumenOperacionesLineEdit.setObjectName(u"volumenOperacionesLineEdit")
+        self.coin_2 = QLabel(self.layoutWidget_2)
+        self.coin_2.setObjectName(u"coin_2")
 
-        self.formLayout_2.setWidget(0, QFormLayout.FieldRole, self.volumenOperacionesLineEdit)
+        self.formLayout_3.setWidget(1, QFormLayout.LabelRole, self.coin_2)
 
-        self.nSoporteResistenciaLabel = QLabel(self.layoutWidget)
-        self.nSoporteResistenciaLabel.setObjectName(u"nSoporteResistenciaLabel")
+        self.coin_LineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.coin_LineEdit_2.setObjectName(u"coin_LineEdit_2")
 
-        self.formLayout_2.setWidget(1, QFormLayout.LabelRole, self.nSoporteResistenciaLabel)
-
-        self.nSoporteResistenciaLineEdit = QLineEdit(self.layoutWidget)
-        self.nSoporteResistenciaLineEdit.setObjectName(u"nSoporteResistenciaLineEdit")
-
-        self.formLayout_2.setWidget(1, QFormLayout.FieldRole, self.nSoporteResistenciaLineEdit)
-
-        self.indicadorVolumenLabel = QLabel(self.layoutWidget)
-        self.indicadorVolumenLabel.setObjectName(u"indicadorVolumenLabel")
-
-        self.formLayout_2.setWidget(2, QFormLayout.LabelRole, self.indicadorVolumenLabel)
-
-        self.indicadorVolumenLineEdit = QLineEdit(self.layoutWidget)
-        self.indicadorVolumenLineEdit.setObjectName(u"indicadorVolumenLineEdit")
-
-        self.formLayout_2.setWidget(2, QFormLayout.FieldRole, self.indicadorVolumenLineEdit)
-
-        self.analisisDireccionMercadoLabel = QLabel(self.layoutWidget)
-        self.analisisDireccionMercadoLabel.setObjectName(u"analisisDireccionMercadoLabel")
-
-        self.formLayout_2.setWidget(3, QFormLayout.LabelRole, self.analisisDireccionMercadoLabel)
-
-        self.analisisDireccionMercadoLineEdit = QLineEdit(self.layoutWidget)
-        self.analisisDireccionMercadoLineEdit.setObjectName(u"analisisDireccionMercadoLineEdit")
-
-        self.formLayout_2.setWidget(3, QFormLayout.FieldRole, self.analisisDireccionMercadoLineEdit)
-
-        self.direcciNMercadoLabel = QLabel(self.layoutWidget)
-        self.direcciNMercadoLabel.setObjectName(u"direcciNMercadoLabel")
-
-        self.formLayout_2.setWidget(4, QFormLayout.LabelRole, self.direcciNMercadoLabel)
-
-        self.direccionMercadoLineEdit = QLineEdit(self.layoutWidget)
-        self.direccionMercadoLineEdit.setObjectName(u"direccionMercadoLineEdit")
-
-        self.formLayout_2.setWidget(4, QFormLayout.FieldRole, self.direccionMercadoLineEdit)
-
-        self.cambioPorcentualLabel = QLabel(self.layoutWidget)
-        self.cambioPorcentualLabel.setObjectName(u"cambioPorcentualLabel")
-
-        self.formLayout_2.setWidget(5, QFormLayout.LabelRole, self.cambioPorcentualLabel)
-
-        self.cambioPorcentualLineEdit = QLineEdit(self.layoutWidget)
-        self.cambioPorcentualLineEdit.setObjectName(u"cambioPorcentualLineEdit")
-
-        self.formLayout_2.setWidget(5, QFormLayout.FieldRole, self.cambioPorcentualLineEdit)
+        self.formLayout_3.setWidget(1, QFormLayout.FieldRole, self.coin_LineEdit_2)
 
 
-        self.horizontalLayout_5.addLayout(self.formLayout_2)
+        self.horizontalLayout_8.addLayout(self.formLayout_3)
 
-        self.horizontalSpacer_3 = QSpacerItem(28, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.formLayout_4 = QFormLayout()
+        self.formLayout_4.setObjectName(u"formLayout_4")
+        self.volumenOperacionesLabel_2 = QLabel(self.layoutWidget_2)
+        self.volumenOperacionesLabel_2.setObjectName(u"volumenOperacionesLabel_2")
 
-        self.horizontalLayout_5.addItem(self.horizontalSpacer_3)
+        self.formLayout_4.setWidget(1, QFormLayout.LabelRole, self.volumenOperacionesLabel_2)
 
-        self.addNew = QPushButton(self.layoutWidget)
-        self.addNew.setObjectName(u"addNew")
+        self.volumenOperacionesLineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.volumenOperacionesLineEdit_2.setObjectName(u"volumenOperacionesLineEdit_2")
 
-        self.horizontalLayout_5.addWidget(self.addNew)
+        self.formLayout_4.setWidget(1, QFormLayout.FieldRole, self.volumenOperacionesLineEdit_2)
 
-        self.table = QTableWidget(self.dashboard_page)
-        if (self.table.columnCount() < 13):
-            self.table.setColumnCount(13)
+        self.nSoporteResistenciaLabel_2 = QLabel(self.layoutWidget_2)
+        self.nSoporteResistenciaLabel_2.setObjectName(u"nSoporteResistenciaLabel_2")
+
+        self.formLayout_4.setWidget(2, QFormLayout.LabelRole, self.nSoporteResistenciaLabel_2)
+
+        self.nSoporteResistenciaLineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.nSoporteResistenciaLineEdit_2.setObjectName(u"nSoporteResistenciaLineEdit_2")
+
+        self.formLayout_4.setWidget(2, QFormLayout.FieldRole, self.nSoporteResistenciaLineEdit_2)
+
+        self.indicadorVolumenLabel_2 = QLabel(self.layoutWidget_2)
+        self.indicadorVolumenLabel_2.setObjectName(u"indicadorVolumenLabel_2")
+
+        self.formLayout_4.setWidget(3, QFormLayout.LabelRole, self.indicadorVolumenLabel_2)
+
+        self.indicadorVolumenLineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.indicadorVolumenLineEdit_2.setObjectName(u"indicadorVolumenLineEdit_2")
+
+        self.formLayout_4.setWidget(3, QFormLayout.FieldRole, self.indicadorVolumenLineEdit_2)
+
+        self.analisisDireccionMercadoLabel_2 = QLabel(self.layoutWidget_2)
+        self.analisisDireccionMercadoLabel_2.setObjectName(u"analisisDireccionMercadoLabel_2")
+
+        self.formLayout_4.setWidget(4, QFormLayout.LabelRole, self.analisisDireccionMercadoLabel_2)
+
+        self.analisisDireccionMercadoLineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.analisisDireccionMercadoLineEdit_2.setObjectName(u"analisisDireccionMercadoLineEdit_2")
+
+        self.formLayout_4.setWidget(4, QFormLayout.FieldRole, self.analisisDireccionMercadoLineEdit_2)
+
+        self.direcciNMercadoLabel_2 = QLabel(self.layoutWidget_2)
+        self.direcciNMercadoLabel_2.setObjectName(u"direcciNMercadoLabel_2")
+
+        self.formLayout_4.setWidget(5, QFormLayout.LabelRole, self.direcciNMercadoLabel_2)
+
+        self.direccionMercadoLineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.direccionMercadoLineEdit_2.setObjectName(u"direccionMercadoLineEdit_2")
+
+        self.formLayout_4.setWidget(5, QFormLayout.FieldRole, self.direccionMercadoLineEdit_2)
+
+        self.cambioPorcentualLabel_2 = QLabel(self.layoutWidget_2)
+        self.cambioPorcentualLabel_2.setObjectName(u"cambioPorcentualLabel_2")
+
+        self.formLayout_4.setWidget(6, QFormLayout.LabelRole, self.cambioPorcentualLabel_2)
+
+        self.cambioPorcentualLineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.cambioPorcentualLineEdit_2.setObjectName(u"cambioPorcentualLineEdit_2")
+
+        self.formLayout_4.setWidget(6, QFormLayout.FieldRole, self.cambioPorcentualLineEdit_2)
+
+        self.patronesVelaLabel_2 = QLabel(self.layoutWidget_2)
+        self.patronesVelaLabel_2.setObjectName(u"patronesVelaLabel_2")
+
+        self.formLayout_4.setWidget(0, QFormLayout.LabelRole, self.patronesVelaLabel_2)
+
+        self.patronesVelaLineEdit_2 = QLineEdit(self.layoutWidget_2)
+        self.patronesVelaLineEdit_2.setObjectName(u"patronesVelaLineEdit_2")
+
+        self.formLayout_4.setWidget(0, QFormLayout.FieldRole, self.patronesVelaLineEdit_2)
+
+
+        self.horizontalLayout_8.addLayout(self.formLayout_4)
+
+        self.horizontalSpacer_4 = QSpacerItem(28, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_8.addItem(self.horizontalSpacer_4)
+
+        self.addNew_2 = QPushButton(self.layoutWidget_2)
+        self.addNew_2.setObjectName(u"addNew_2")
+
+        self.horizontalLayout_8.addWidget(self.addNew_2)
+
+        self.table_2 = QTableWidget(self.messages_page)
+        if (self.table_2.columnCount() < 14):
+            self.table_2.setColumnCount(14)
         __qtablewidgetitem = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        self.table_2.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.table_2.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        self.table_2.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         __qtablewidgetitem3 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        self.table_2.setHorizontalHeaderItem(3, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        self.table_2.setHorizontalHeaderItem(4, __qtablewidgetitem4)
         __qtablewidgetitem5 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(5, __qtablewidgetitem5)
+        self.table_2.setHorizontalHeaderItem(5, __qtablewidgetitem5)
         __qtablewidgetitem6 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(6, __qtablewidgetitem6)
+        self.table_2.setHorizontalHeaderItem(6, __qtablewidgetitem6)
         __qtablewidgetitem7 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(7, __qtablewidgetitem7)
+        self.table_2.setHorizontalHeaderItem(7, __qtablewidgetitem7)
         __qtablewidgetitem8 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(8, __qtablewidgetitem8)
+        self.table_2.setHorizontalHeaderItem(8, __qtablewidgetitem8)
         __qtablewidgetitem9 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(9, __qtablewidgetitem9)
+        self.table_2.setHorizontalHeaderItem(9, __qtablewidgetitem9)
         __qtablewidgetitem10 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(10, __qtablewidgetitem10)
+        self.table_2.setHorizontalHeaderItem(10, __qtablewidgetitem10)
         __qtablewidgetitem11 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(11, __qtablewidgetitem11)
+        self.table_2.setHorizontalHeaderItem(11, __qtablewidgetitem11)
         __qtablewidgetitem12 = QTableWidgetItem()
-        self.table.setHorizontalHeaderItem(12, __qtablewidgetitem12)
-        self.table.setObjectName(u"table")
-        self.table.setGeometry(QRect(0, 350, 681, 201))
+        self.table_2.setHorizontalHeaderItem(12, __qtablewidgetitem12)
+        __qtablewidgetitem13 = QTableWidgetItem()
+        self.table_2.setHorizontalHeaderItem(13, __qtablewidgetitem13)
+        self.table_2.setObjectName(u"table_2")
+        self.table_2.setGeometry(QRect(0, 350, 681, 201))
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.table.sizePolicy().hasHeightForWidth())
-        self.table.setSizePolicy(sizePolicy)
-        self.table.setStyleSheet(u"color:black;\n"
+        sizePolicy.setHeightForWidth(self.table_2.sizePolicy().hasHeightForWidth())
+        self.table_2.setSizePolicy(sizePolicy)
+        self.table_2.setStyleSheet(u"color:black;\n"
 "")
-        self.table.setRowCount(0)
-        self.table.setColumnCount(13)
-        self.table.horizontalHeader().setVisible(True)
-        self.table.horizontalHeader().setCascadingSectionResizes(False)
-        self.table.horizontalHeader().setMinimumSectionSize(32)
-        self.table.horizontalHeader().setDefaultSectionSize(150)
-        self.table.verticalHeader().setMinimumSectionSize(24)
-        self.table.verticalHeader().setStretchLastSection(False)
-        self.groupBox_buttons = QGroupBox(self.dashboard_page)
-        self.groupBox_buttons.setObjectName(u"groupBox_buttons")
-        self.groupBox_buttons.setGeometry(QRect(9, 260, 671, 81))
-        self.groupBox_buttons.setStyleSheet(u"color:black;")
-        self.horizontalLayout_6 = QHBoxLayout(self.groupBox_buttons)
-        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.loadData = QPushButton(self.groupBox_buttons)
-        self.loadData.setObjectName(u"loadData")
-
-        self.horizontalLayout_6.addWidget(self.loadData)
-
-        self.callData = QPushButton(self.groupBox_buttons)
-        self.callData.setObjectName(u"callData")
-
-        self.horizontalLayout_6.addWidget(self.callData)
-
-        self.uploadData = QPushButton(self.groupBox_buttons)
-        self.uploadData.setObjectName(u"uploadData")
-
-        self.horizontalLayout_6.addWidget(self.uploadData)
-
-        self.deleteData = QPushButton(self.groupBox_buttons)
-        self.deleteData.setObjectName(u"deleteData")
-
-        self.horizontalLayout_6.addWidget(self.deleteData)
-
-        self.stackedWidget.addWidget(self.dashboard_page)
-        self.messages_page = QWidget()
-        self.messages_page.setObjectName(u"messages_page")
-        self.label_5 = QLabel(self.messages_page)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(190, 190, 221, 121))
-        font1 = QFont()
-        font1.setPointSize(20)
-        self.label_5.setFont(font1)
-        self.label_5.setStyleSheet(u"color:black;\n"
-"")
+        self.table_2.setRowCount(0)
+        self.table_2.setColumnCount(14)
+        self.table_2.horizontalHeader().setVisible(True)
+        self.table_2.horizontalHeader().setCascadingSectionResizes(False)
+        self.table_2.horizontalHeader().setMinimumSectionSize(32)
+        self.table_2.horizontalHeader().setDefaultSectionSize(150)
+        self.table_2.verticalHeader().setMinimumSectionSize(24)
+        self.table_2.verticalHeader().setStretchLastSection(False)
         self.stackedWidget.addWidget(self.messages_page)
         self.notifications_page = QWidget()
         self.notifications_page.setObjectName(u"notifications_page")
         self.label_6 = QLabel(self.notifications_page)
         self.label_6.setObjectName(u"label_6")
         self.label_6.setGeometry(QRect(230, 140, 221, 121))
-        self.label_6.setFont(font1)
+        self.label_6.setFont(font3)
         self.label_6.setStyleSheet(u"color:black;\n"
 "")
         self.stackedWidget.addWidget(self.notifications_page)
@@ -578,19 +640,10 @@ class Ui_MainWindow(object):
         self.label_8 = QLabel(self.settings_page)
         self.label_8.setObjectName(u"label_8")
         self.label_8.setGeometry(QRect(180, 180, 211, 81))
-        self.label_8.setFont(font1)
+        self.label_8.setFont(font3)
         self.label_8.setStyleSheet(u"color:black;\n"
 "")
         self.stackedWidget.addWidget(self.settings_page)
-        self.profile_page = QWidget()
-        self.profile_page.setObjectName(u"profile_page")
-        self.label_7 = QLabel(self.profile_page)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(240, 170, 151, 121))
-        self.label_7.setFont(font1)
-        self.label_7.setStyleSheet(u"color:black;\n"
-"")
-        self.stackedWidget.addWidget(self.profile_page)
 
         self.verticalLayout_5.addWidget(self.stackedWidget)
 
@@ -638,55 +691,60 @@ class Ui_MainWindow(object):
         self.menu.setText("")
         self.pushButton_20.setText("")
         self.pushButton_21.setText("")
-        self.groupBox_form.setTitle(QCoreApplication.translate("MainWindow", u"Add New Trade", None))
-        self.fechaLabel.setText(QCoreApplication.translate("MainWindow", u"Fecha (dd/mm/yyyy)", None))
-        self.kc_19_1_5Label.setText(QCoreApplication.translate("MainWindow", u"kc_19_1_5", None))
-        self.ema_12Label.setText(QCoreApplication.translate("MainWindow", u"ema_12", None))
-        self.ema_24Label.setText(QCoreApplication.translate("MainWindow", u"ema_24", None))
-        self.rSILabel.setText(QCoreApplication.translate("MainWindow", u"RSI", None))
-        self.sma_14Label.setText(QCoreApplication.translate("MainWindow", u"sma_14", None))
-        self.patronesVelaLabel.setText(QCoreApplication.translate("MainWindow", u"patrones vela", None))
-        self.volumenOperacionesLabel.setText(QCoreApplication.translate("MainWindow", u"Volumen operaciones", None))
-        self.nSoporteResistenciaLabel.setText(QCoreApplication.translate("MainWindow", u"N Soporte/Resistencia", None))
-        self.indicadorVolumenLabel.setText(QCoreApplication.translate("MainWindow", u"Indicador volumen", None))
-        self.analisisDireccionMercadoLabel.setText(QCoreApplication.translate("MainWindow", u"An\u00e0lisis direcci\u00f2n mercado", None))
-        self.direcciNMercadoLabel.setText(QCoreApplication.translate("MainWindow", u"Direcci\u00f2n mercado", None))
-        self.cambioPorcentualLabel.setText(QCoreApplication.translate("MainWindow", u"cambio porcentual", None))
-        self.addNew.setText(QCoreApplication.translate("MainWindow", u"Add new tarde", None))
-        ___qtablewidgetitem = self.table.horizontalHeaderItem(0)
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Most Popular Programming Languages", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Some commonly recognized programming languages that frequently appear", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"In list of top languages include", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Profile Page", None))
+        self.groupBox_buttons_2.setTitle(QCoreApplication.translate("MainWindow", u"Manage Data", None))
+        self.loadData_2.setText(QCoreApplication.translate("MainWindow", u"Load Data", None))
+        self.callData_2.setText(QCoreApplication.translate("MainWindow", u"Extrac Data", None))
+        self.uploadData_2.setText(QCoreApplication.translate("MainWindow", u"Upload Data", None))
+        self.deleteData_2.setText(QCoreApplication.translate("MainWindow", u"Delete Data", None))
+        self.groupBox_form_2.setTitle(QCoreApplication.translate("MainWindow", u"Add New Trade", None))
+        self.fechaLabel_2.setText(QCoreApplication.translate("MainWindow", u"Fecha (dd/mm/yyyy)", None))
+        self.kc_19_1_5Label_2.setText(QCoreApplication.translate("MainWindow", u"kc_19_1_5", None))
+        self.ema_12Label_2.setText(QCoreApplication.translate("MainWindow", u"ema_12", None))
+        self.ema_24Label_2.setText(QCoreApplication.translate("MainWindow", u"ema_24", None))
+        self.rSILabel_2.setText(QCoreApplication.translate("MainWindow", u"RSI", None))
+        self.sma_14Label_2.setText(QCoreApplication.translate("MainWindow", u"sma_14", None))
+        self.coin_2.setText(QCoreApplication.translate("MainWindow", u"Coin", None))
+        self.volumenOperacionesLabel_2.setText(QCoreApplication.translate("MainWindow", u"Volumen operaciones", None))
+        self.nSoporteResistenciaLabel_2.setText(QCoreApplication.translate("MainWindow", u"N Soporte/Resistencia", None))
+        self.indicadorVolumenLabel_2.setText(QCoreApplication.translate("MainWindow", u"Indicador volumen", None))
+        self.analisisDireccionMercadoLabel_2.setText(QCoreApplication.translate("MainWindow", u"An\u00e0lisis direcci\u00f2n mercado", None))
+        self.direcciNMercadoLabel_2.setText(QCoreApplication.translate("MainWindow", u"Direcci\u00f2n mercado", None))
+        self.cambioPorcentualLabel_2.setText(QCoreApplication.translate("MainWindow", u"cambio porcentual", None))
+        self.patronesVelaLabel_2.setText(QCoreApplication.translate("MainWindow", u"patrones vela", None))
+        self.addNew_2.setText(QCoreApplication.translate("MainWindow", u"Add new tarde", None))
+        ___qtablewidgetitem = self.table_2.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Fecha (dd/mm/yyyy)", None));
-        ___qtablewidgetitem1 = self.table.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"kc_19_1_5", None));
-        ___qtablewidgetitem2 = self.table.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"ema_12", None));
-        ___qtablewidgetitem3 = self.table.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"ema_24", None));
-        ___qtablewidgetitem4 = self.table.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"rsi", None));
-        ___qtablewidgetitem5 = self.table.horizontalHeaderItem(5)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"sma_14", None));
-        ___qtablewidgetitem6 = self.table.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Patrones vela", None));
-        ___qtablewidgetitem7 = self.table.horizontalHeaderItem(7)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Volumen operaciones", None));
-        ___qtablewidgetitem8 = self.table.horizontalHeaderItem(8)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"N Soporte/Resistencia", None));
-        ___qtablewidgetitem9 = self.table.horizontalHeaderItem(9)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Indicador volumen", None));
-        ___qtablewidgetitem10 = self.table.horizontalHeaderItem(10)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"An\u00e0lsis mercado", None));
-        ___qtablewidgetitem11 = self.table.horizontalHeaderItem(11)
-        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Direcci\u00f2n mercado", None));
-        ___qtablewidgetitem12 = self.table.horizontalHeaderItem(12)
-        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Cambio porcentual", None));
-        self.groupBox_buttons.setTitle(QCoreApplication.translate("MainWindow", u"Manage Data", None))
-        self.loadData.setText(QCoreApplication.translate("MainWindow", u"Load Data", None))
-        self.callData.setText(QCoreApplication.translate("MainWindow", u"Extrac Data", None))
-        self.uploadData.setText(QCoreApplication.translate("MainWindow", u"Upload Data", None))
-        self.deleteData.setText(QCoreApplication.translate("MainWindow", u"Delete Data", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Messages Page", None))
+        ___qtablewidgetitem1 = self.table_2.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Coin", None));
+        ___qtablewidgetitem2 = self.table_2.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"kc_19_1_5", None));
+        ___qtablewidgetitem3 = self.table_2.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"ema_12", None));
+        ___qtablewidgetitem4 = self.table_2.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"ema_24", None));
+        ___qtablewidgetitem5 = self.table_2.horizontalHeaderItem(5)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"rsi", None));
+        ___qtablewidgetitem6 = self.table_2.horizontalHeaderItem(6)
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"sma_14", None));
+        ___qtablewidgetitem7 = self.table_2.horizontalHeaderItem(7)
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Patrones vela", None));
+        ___qtablewidgetitem8 = self.table_2.horizontalHeaderItem(8)
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Volumen operaciones", None));
+        ___qtablewidgetitem9 = self.table_2.horizontalHeaderItem(9)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"N Soporte/Resistencia", None));
+        ___qtablewidgetitem10 = self.table_2.horizontalHeaderItem(10)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Indicador volumen", None));
+        ___qtablewidgetitem11 = self.table_2.horizontalHeaderItem(11)
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"An\u00e0lsis mercado", None));
+        ___qtablewidgetitem12 = self.table_2.horizontalHeaderItem(12)
+        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Direcci\u00f2n mercado", None));
+        ___qtablewidgetitem13 = self.table_2.horizontalHeaderItem(13)
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Cambio porcentual", None));
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Notifications Page", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Settings Page", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Profile Page", None))
     # retranslateUi
 
