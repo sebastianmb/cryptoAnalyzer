@@ -32,11 +32,11 @@ class MySideBar(QMainWindow,Ui_MainWindow):
         self.settings_1.clicked.connect(self.switch_to_settingsPage)
         self.settings_2.clicked.connect(self.switch_to_settingsPage)
 
-        self.addNew_2.clicked.connect(self.add_new_data)
-        self.loadData_2.clicked.connect(self.load_data)
-        self.callData_2.clicked.connect(self.call_data)
-        self.uploadData_2.clicked.connect(self.upload_data)
-        self.deleteData_2.clicked.connect(self.delete_data)
+        self.addNew.clicked.connect(self.add_new_data)
+        self.loadData.clicked.connect(self.load_data)
+        self.callData.clicked.connect(self.call_data)
+        self.uploadData.clicked.connect(self.upload_data)
+        self.deleteData.clicked.connect(self.delete_data)
 
         
     
@@ -51,24 +51,24 @@ class MySideBar(QMainWindow,Ui_MainWindow):
     def add_new_data(self):
         # Crear un cursor para ejecutar comandos SQL
         self.cursor=self.create_connection().cursor()
-        self.cursor.execute("CREATE TABLE IF NOT EXISTS Datos_Trading (id INTEGER PRIMARY KEY, fecha text, coin text, kc_19_1_5 text, ema_12 text, ema_24 text, rsi text, sma_14 text, volumen_operaciones text, patrones_velas text, niveles_soporte_resistencia text, indicador_volumen text, analisis_direccion_mercado text, direccion_mercado_pasado_tiempo text, cambio_porcentual text)")
+        self.cursor.execute("CREATE TABLE IF NOT EXISTS Datos_Trading (id INTEGER PRIMARY KEY, fecha text,  kc_19_1_5 text, ema_12 text, ema_24 text, rsi text, sma_14 text, volumen_operaciones text, patrones_velas text, niveles_soporte_resistencia text, indicador_volumen text, analisis_direccion_mercado text, direccion_mercado_pasado_tiempo text, cambio_porcentual text)")
 
         self.new_trade = [
                 
-                self.fecha_LineEdit_2.text(),  # Fecha y hora de la operación obtenida del QLineEdit
-                self.coin_LineEdit_2.text(), 
-                self.kc_19_1_5LineEdit_2.text(),  # Valor del indicador Keltner Channel obtenido del QLineEdit
-                self.ema_12LineEdit_2.text(),  # Valor de la media móvil exponencial con período 12 obtenido del QLineEdit
-                self.ema_24LineEdit_2.text(),  # Valor de la media móvil exponencial con período 24 obtenido del QLineEdit
-                self.rsiLineEdit_2.text(),  # Valor del índice de fuerza relativa obtenido del QLineEdit
-                self.sma_14LineEdit_2.text(),  # Valor de la media móvil simple con período 14 obtenido del QLineEdit
-                self.volumenOperacionesLineEdit_2.text(),  # Volumen de operaciones obtenido del QLineEdit
-                self.patronesVelaLineEdit_2.text(),  # Descripción o código de los patrones de velas identificados obtenido del QLineEdit
-                self.nSoporteResistenciaLineEdit_2.text(),  # Descripción o código de los niveles de soporte y resistencia obtenido del QLineEdit
-                self.indicadorVolumenLineEdit_2.text(),  # Valor de algún indicador de volumen adicional obtenido del QLineEdit
-                self.analisisDireccionMercadoLineEdit_2.text(),  # Indicación de si se considera que el mercado está subiendo o bajando obtenido del QLineEdit
-                self.direccionMercadoLineEdit_2.text(),  # Indicación de si el mercado subió o bajó después de un período de tiempo específico obtenido del QLineEdit
-                self.cambioPorcentualLineEdit_2.text()  # Porcentaje de cambio en el precio desde la operación anterior obtenido del QLineEdit
+                self.fechalineEdit.text(),  # Fecha y hora de la operación obtenida del QLineEdit
+                 
+                self.kc_19_1_5LineEdit.text(),  # Valor del indicador Keltner Channel obtenido del QLineEdit
+                self.ema_12LineEdit.text(),  # Valor de la media móvil exponencial con período 12 obtenido del QLineEdit
+                self.ema_24LineEdit.text(),  # Valor de la media móvil exponencial con período 24 obtenido del QLineEdit
+                self.rsiLineEdit.text(),  # Valor del índice de fuerza relativa obtenido del QLineEdit
+                self.sma_14LineEdit.text(),  # Valor de la media móvil simple con período 14 obtenido del QLineEdit
+                self.volumenOperacionesLineEdit.text(),  # Volumen de operaciones obtenido del QLineEdit
+                self.patronesVelaLineEdit.text(),  # Descripción o código de los patrones de velas identificados obtenido del QLineEdit
+                self.nSoporteResistenciaLineEdit.text(),  # Descripción o código de los niveles de soporte y resistencia obtenido del QLineEdit
+                self.indicadorVolumenLineEdit.text(),  # Valor de algún indicador de volumen adicional obtenido del QLineEdit
+                self.analisisDireccionMercadoLineEdit.text(),  # Indicación de si se considera que el mercado está subiendo o bajando obtenido del QLineEdit
+                self.direccionMercadoLineEdit.text(),  # Indicación de si el mercado subió o bajó después de un período de tiempo específico obtenido del QLineEdit
+                self.cambioPorcentualLineEdit.text()  # Porcentaje de cambio en el precio desde la operación anterior obtenido del QLineEdit
                 
                 
             ]
@@ -82,20 +82,20 @@ class MySideBar(QMainWindow,Ui_MainWindow):
         self.connection.commit()
         self.connection.close()
         # Clear line edit text
-        self.fecha_LineEdit_2.clear() 
-        self.coin_LineEdit_2.clear() 
-        self.kc_19_1_5LineEdit_2.clear()
-        self.ema_12LineEdit_2.clear()  
-        self.ema_24LineEdit_2.clear()  
-        self.rsiLineEdit_2.clear()  
-        self.sma_14LineEdit_2.clear() 
-        self.volumenOperacionesLineEdit_2.clear() 
-        self.patronesVelaLineEdit_2.clear()
-        self.nSoporteResistenciaLineEdit_2.clear()  
-        self.indicadorVolumenLineEdit_2.clear()
-        self.analisisDireccionMercadoLineEdit_2.clear()
-        self.direccionMercadoLineEdit_2.clear()
-        self.cambioPorcentualLineEdit_2.clear() 
+        self.fechalineEdit.clear() 
+         
+        self.kc_19_1_5LineEdit.clear()
+        self.ema_12LineEdit.clear()  
+        self.ema_24LineEdit.clear()  
+        self.rsiLineEdit.clear()  
+        self.sma_14LineEdit.clear() 
+        self.volumenOperacionesLineEdit.clear() 
+        self.patronesVelaLineEdit.clear()
+        self.nSoporteResistenciaLineEdit.clear()  
+        self.indicadorVolumenLineEdit.clear()
+        self.analisisDireccionMercadoLineEdit.clear()
+        self.direccionMercadoLineEdit.clear()
+        self.cambioPorcentualLineEdit.clear() 
    
     def load_data(self):
         self.cursor = self.create_connection().cursor()
@@ -116,20 +116,20 @@ class MySideBar(QMainWindow,Ui_MainWindow):
         table_row=0
 
         for i in self.cursor.execute(trades_sqlquery):
-            self.table_2.setItem(table_row,0,QTableWidgetItem(str(i[0])))
-            self.table_2.setItem(table_row,1,QTableWidgetItem(str(i[1])))
-            self.table_2.setItem(table_row,2,QTableWidgetItem(i[2]))
-            self.table_2.setItem(table_row,3,QTableWidgetItem(i[3]))
-            self.table_2.setItem(table_row,4,QTableWidgetItem(i[4]))
-            self.table_2.setItem(table_row,5,QTableWidgetItem(i[5]))
-            self.table_2.setItem(table_row,6,QTableWidgetItem(i[6]))
-            self.table_2.setItem(table_row,7,QTableWidgetItem(i[7]))
-            self.table_2.setItem(table_row,8,QTableWidgetItem(i[8]))
-            self.table_2.setItem(table_row,9,QTableWidgetItem(i[9]))
-            self.table_2.setItem(table_row,10,QTableWidgetItem(i[10]))
-            self.table_2.setItem(table_row,11,QTableWidgetItem(i[11]))
-            self.table_2.setItem(table_row,12,QTableWidgetItem(i[12]))
-            self.table_2.setItem(table_row,13,QTableWidgetItem(i[13]))
+            self.table.setItem(table_row,0,QTableWidgetItem(str(i[0])))
+            self.table.setItem(table_row,1,QTableWidgetItem(str(i[1])))
+            self.table.setItem(table_row,2,QTableWidgetItem(i[2]))
+            self.table.setItem(table_row,3,QTableWidgetItem(i[3]))
+            self.table.setItem(table_row,4,QTableWidgetItem(i[4]))
+            self.table.setItem(table_row,5,QTableWidgetItem(i[5]))
+            self.table.setItem(table_row,6,QTableWidgetItem(i[6]))
+            self.table.setItem(table_row,7,QTableWidgetItem(i[7]))
+            self.table.setItem(table_row,8,QTableWidgetItem(i[8]))
+            self.table.setItem(table_row,9,QTableWidgetItem(i[9]))
+            self.table.setItem(table_row,10,QTableWidgetItem(i[10]))
+            self.table.setItem(table_row,11,QTableWidgetItem(i[11]))
+            self.table.setItem(table_row,12,QTableWidgetItem(i[12]))
+            self.table.setItem(table_row,13,QTableWidgetItem(i[13]))
             
            
             table_row = table_row+1 
