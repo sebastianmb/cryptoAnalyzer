@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>962</width>
+    <width>872</width>
     <height>619</height>
    </rect>
   </property>
@@ -43,12 +43,12 @@ QPushButton{
 	height:30px;
 	padding-left:10px;
 	border-top-left-radius:10px;
-	
+
 
 }
 
 QPushButton:checked{
-	background-color:#F5FAFE;;
+	background-color:#F5FAFE;
 	color:#1F95EF;
 	font-weight:bold;
 
@@ -517,152 +517,13 @@ QPushButton:checked{
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
          <widget class="QWidget" name="dashboard_page">
-          <widget class="QLabel" name="label_4">
-           <property name="geometry">
-            <rect>
-             <x>40</x>
-             <y>20</y>
-             <width>401</width>
-             <height>16</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>15</pointsize>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: black;
-</string>
-           </property>
-           <property name="text">
-            <string>Most Popular Programming Languages</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="label_5">
-           <property name="geometry">
-            <rect>
-             <x>38</x>
-             <y>50</y>
-             <width>411</width>
-             <height>20</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: black;
-</string>
-           </property>
-           <property name="text">
-            <string>Some commonly recognized programming languages that frequently appear</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="label_9">
-           <property name="geometry">
-            <rect>
-             <x>40</x>
-             <y>80</y>
-             <width>181</width>
-             <height>20</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: black;
-</string>
-           </property>
-           <property name="text">
-            <string>In list of top languages include</string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QWidget" name="profile_page">
-          <widget class="QLabel" name="label_7">
-           <property name="geometry">
-            <rect>
-             <x>240</x>
-             <y>170</y>
-             <width>151</width>
-             <height>121</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:black;
-</string>
-           </property>
-           <property name="text">
-            <string>Profile Page</string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QWidget" name="messages_page">
-          <widget class="QGroupBox" name="groupBox_buttons_2">
-           <property name="geometry">
-            <rect>
-             <x>9</x>
-             <y>260</y>
-             <width>671</width>
-             <height>81</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:black;</string>
-           </property>
-           <property name="title">
-            <string>Manage Data</string>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_7">
-            <item>
-             <widget class="QPushButton" name="loadData_2">
-              <property name="text">
-               <string>Load Data</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="callData_2">
-              <property name="text">
-               <string>Extrac Data</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="uploadData_2">
-              <property name="text">
-               <string>Upload Data</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="deleteData_2">
-              <property name="text">
-               <string>Delete Data</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-          <widget class="QGroupBox" name="groupBox_form_2">
+          <widget class="QGroupBox" name="groupBox_form">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>681</width>
-             <height>251</height>
+             <width>631</width>
+             <height>250</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -672,166 +533,166 @@ QPushButton:checked{
            <property name="title">
             <string>Add New Trade</string>
            </property>
-           <widget class="QWidget" name="layoutWidget_2">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>10</x>
               <y>26</y>
-              <width>651</width>
-              <height>220</height>
+              <width>626</width>
+              <height>187</height>
              </rect>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
              <item>
-              <layout class="QFormLayout" name="formLayout_3">
+              <layout class="QFormLayout" name="formLayout">
                <item row="0" column="0">
-                <widget class="QLabel" name="fechaLabel_2">
+                <widget class="QLabel" name="fechaLabel">
                  <property name="text">
-                  <string>Fecha (dd/mm/yyyy)</string>
+                  <string>Fecha</string>
                  </property>
                 </widget>
                </item>
-               <item row="0" column="1">
-                <widget class="QLineEdit" name="fecha_LineEdit_2"/>
-               </item>
-               <item row="2" column="0">
-                <widget class="QLabel" name="kc_19_1_5Label_2">
+               <item row="1" column="0">
+                <widget class="QLabel" name="kc_19_1_5Label">
                  <property name="text">
                   <string>kc_19_1_5</string>
                  </property>
                 </widget>
                </item>
-               <item row="2" column="1">
-                <widget class="QLineEdit" name="kc_19_1_5LineEdit_2"/>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="kc_19_1_5LineEdit"/>
                </item>
-               <item row="3" column="0">
-                <widget class="QLabel" name="ema_12Label_2">
+               <item row="2" column="0">
+                <widget class="QLabel" name="ema_12Label">
                  <property name="text">
                   <string>ema_12</string>
                  </property>
                 </widget>
                </item>
-               <item row="3" column="1">
-                <widget class="QLineEdit" name="ema_12LineEdit_2"/>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="ema_12LineEdit"/>
                </item>
-               <item row="4" column="0">
-                <widget class="QLabel" name="ema_24Label_2">
+               <item row="3" column="0">
+                <widget class="QLabel" name="ema_24Label">
                  <property name="text">
                   <string>ema_24</string>
                  </property>
                 </widget>
                </item>
-               <item row="4" column="1">
-                <widget class="QLineEdit" name="ema_24LineEdit_2"/>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="ema_24LineEdit"/>
                </item>
-               <item row="5" column="0">
-                <widget class="QLabel" name="rSILabel_2">
+               <item row="4" column="0">
+                <widget class="QLabel" name="rSILabel">
                  <property name="text">
                   <string>RSI</string>
                  </property>
                 </widget>
                </item>
-               <item row="5" column="1">
-                <widget class="QLineEdit" name="rsiLineEdit_2"/>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="rsiLineEdit"/>
                </item>
-               <item row="6" column="0">
-                <widget class="QLabel" name="sma_14Label_2">
+               <item row="5" column="0">
+                <widget class="QLabel" name="sma_14Label">
                  <property name="text">
                   <string>sma_14</string>
                  </property>
                 </widget>
                </item>
-               <item row="6" column="1">
-                <widget class="QLineEdit" name="sma_14LineEdit_2"/>
-               </item>
-               <item row="1" column="0">
-                <widget class="QLabel" name="coin_2">
-                 <property name="text">
-                  <string>Coin</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QLineEdit" name="coin_LineEdit_2"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QFormLayout" name="formLayout_4">
-               <item row="1" column="0">
-                <widget class="QLabel" name="volumenOperacionesLabel_2">
-                 <property name="text">
-                  <string>Volumen operaciones</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QLineEdit" name="volumenOperacionesLineEdit_2"/>
-               </item>
-               <item row="2" column="0">
-                <widget class="QLabel" name="nSoporteResistenciaLabel_2">
-                 <property name="text">
-                  <string>N Soporte/Resistencia</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="1">
-                <widget class="QLineEdit" name="nSoporteResistenciaLineEdit_2"/>
-               </item>
-               <item row="3" column="0">
-                <widget class="QLabel" name="indicadorVolumenLabel_2">
-                 <property name="text">
-                  <string>Indicador volumen</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="1">
-                <widget class="QLineEdit" name="indicadorVolumenLineEdit_2"/>
-               </item>
-               <item row="4" column="0">
-                <widget class="QLabel" name="analisisDireccionMercadoLabel_2">
-                 <property name="text">
-                  <string>Anàlisis direcciòn mercado</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="1">
-                <widget class="QLineEdit" name="analisisDireccionMercadoLineEdit_2"/>
-               </item>
-               <item row="5" column="0">
-                <widget class="QLabel" name="direcciNMercadoLabel_2">
-                 <property name="text">
-                  <string>Direcciòn mercado</string>
-                 </property>
-                </widget>
-               </item>
                <item row="5" column="1">
-                <widget class="QLineEdit" name="direccionMercadoLineEdit_2"/>
+                <widget class="QLineEdit" name="sma_14LineEdit"/>
                </item>
                <item row="6" column="0">
-                <widget class="QLabel" name="cambioPorcentualLabel_2">
-                 <property name="text">
-                  <string>cambio porcentual</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="6" column="1">
-                <widget class="QLineEdit" name="cambioPorcentualLineEdit_2"/>
-               </item>
-               <item row="0" column="0">
-                <widget class="QLabel" name="patronesVelaLabel_2">
+                <widget class="QLabel" name="patronesVelaLabel">
                  <property name="text">
                   <string>patrones vela</string>
                  </property>
                 </widget>
                </item>
+               <item row="6" column="1">
+                <widget class="QLineEdit" name="patronesVelaLineEdit"/>
+               </item>
                <item row="0" column="1">
-                <widget class="QLineEdit" name="patronesVelaLineEdit_2"/>
+                <widget class="QLineEdit" name="fechalineEdit"/>
                </item>
               </layout>
              </item>
              <item>
-              <spacer name="horizontalSpacer_4">
+              <layout class="QFormLayout" name="formLayout_2">
+               <item row="0" column="0">
+                <widget class="QLabel" name="volumenOperacionesLabel">
+                 <property name="text">
+                  <string>Volumen operaciones</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="volumenOperacionesLineEdit"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="nSoporteResistenciaLabel">
+                 <property name="text">
+                  <string>N Soporte/Resistencia</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="nSoporteResistenciaLineEdit"/>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="indicadorVolumenLabel">
+                 <property name="text">
+                  <string>Indicador volumen</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="indicadorVolumenLineEdit"/>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="analisisDireccionMercadoLabel">
+                 <property name="text">
+                  <string>Anàlisis direcciòn mercado</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="analisisDireccionMercadoLineEdit"/>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="direcciNMercadoLabel">
+                 <property name="text">
+                  <string>Direcciòn mercado</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="direccionMercadoLineEdit"/>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="cambioPorcentualLabel">
+                 <property name="text">
+                  <string>cambio porcentual</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QLineEdit" name="cambioPorcentualLineEdit"/>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="coin">
+                 <property name="text">
+                  <string>Coin</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QLineEdit" name="coinEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
                <property name="orientation">
                 <enum>Qt::Orientation::Horizontal</enum>
                </property>
@@ -844,7 +705,7 @@ QPushButton:checked{
               </spacer>
              </item>
              <item>
-              <widget class="QPushButton" name="addNew_2">
+              <widget class="QPushButton" name="addNew">
                <property name="text">
                 <string>Add new tarde</string>
                </property>
@@ -853,12 +714,12 @@ QPushButton:checked{
             </layout>
            </widget>
           </widget>
-          <widget class="QTableWidget" name="table_2">
+          <widget class="QTableWidget" name="table">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>350</y>
-             <width>681</width>
+             <width>631</width>
              <height>201</height>
             </rect>
            </property>
@@ -898,12 +759,7 @@ QPushButton:checked{
            </attribute>
            <column>
             <property name="text">
-             <string>Fecha (dd/mm/yyyy)</string>
-            </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>Coin</string>
+             <string>Fecha</string>
             </property>
            </column>
            <column>
@@ -966,6 +822,81 @@ QPushButton:checked{
              <string>Cambio porcentual</string>
             </property>
            </column>
+           <column>
+            <property name="text">
+             <string>Coin</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_buttons">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>260</y>
+             <width>631</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;</string>
+           </property>
+           <property name="title">
+            <string>Manage Data</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QPushButton" name="loadData">
+              <property name="text">
+               <string>Load Data</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="callData">
+              <property name="text">
+               <string>Extrac Data</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="uploadData">
+              <property name="text">
+               <string>Upload Data</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="deleteData">
+              <property name="text">
+               <string>Delete Data</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="messages_page">
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>190</y>
+             <width>221</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+</string>
+           </property>
+           <property name="text">
+            <string>Messages Page</string>
+           </property>
           </widget>
          </widget>
          <widget class="QWidget" name="notifications_page">
@@ -1016,56 +947,36 @@ QPushButton:checked{
            </property>
           </widget>
          </widget>
+         <widget class="QWidget" name="profile_page">
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>170</y>
+             <width>151</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+</string>
+           </property>
+           <property name="text">
+            <string>Profile Page</string>
+           </property>
+          </widget>
+         </widget>
         </widget>
        </item>
       </layout>
      </widget>
     </item>
    </layout>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_2"/>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_3"/>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_4"/>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_5"/>
-   </widget>
   </widget>
  </widget>
  <resources>

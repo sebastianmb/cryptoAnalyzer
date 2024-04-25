@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'sidebar_bk.ui'
+## Form generated from reading UI file 'sidebar.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.2
 ##
@@ -327,7 +327,7 @@ class Ui_MainWindow(object):
 "")
         self.layoutWidget = QWidget(self.groupBox_form)
         self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(10, 26, 619, 214))
+        self.layoutWidget.setGeometry(QRect(10, 26, 626, 187))
         self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -468,6 +468,16 @@ class Ui_MainWindow(object):
 
         self.formLayout_2.setWidget(5, QFormLayout.FieldRole, self.cambioPorcentualLineEdit)
 
+        self.coin = QLabel(self.layoutWidget)
+        self.coin.setObjectName(u"coin")
+
+        self.formLayout_2.setWidget(6, QFormLayout.LabelRole, self.coin)
+
+        self.coinEdit = QLineEdit(self.layoutWidget)
+        self.coinEdit.setObjectName(u"coinEdit")
+
+        self.formLayout_2.setWidget(6, QFormLayout.FieldRole, self.coinEdit)
+
 
         self.horizontalLayout_5.addLayout(self.formLayout_2)
 
@@ -481,8 +491,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addWidget(self.addNew)
 
         self.table = QTableWidget(self.dashboard_page)
-        if (self.table.columnCount() < 13):
-            self.table.setColumnCount(13)
+        if (self.table.columnCount() < 14):
+            self.table.setColumnCount(14)
         __qtablewidgetitem = QTableWidgetItem()
         self.table.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
@@ -509,6 +519,8 @@ class Ui_MainWindow(object):
         self.table.setHorizontalHeaderItem(11, __qtablewidgetitem11)
         __qtablewidgetitem12 = QTableWidgetItem()
         self.table.setHorizontalHeaderItem(12, __qtablewidgetitem12)
+        __qtablewidgetitem13 = QTableWidgetItem()
+        self.table.setHorizontalHeaderItem(13, __qtablewidgetitem13)
         self.table.setObjectName(u"table")
         self.table.setGeometry(QRect(0, 350, 631, 201))
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
@@ -519,7 +531,7 @@ class Ui_MainWindow(object):
         self.table.setStyleSheet(u"color:black;\n"
 "")
         self.table.setRowCount(0)
-        self.table.setColumnCount(13)
+        self.table.setColumnCount(14)
         self.table.horizontalHeader().setVisible(True)
         self.table.horizontalHeader().setCascadingSectionResizes(False)
         self.table.horizontalHeader().setMinimumSectionSize(32)
@@ -652,6 +664,7 @@ class Ui_MainWindow(object):
         self.analisisDireccionMercadoLabel.setText(QCoreApplication.translate("MainWindow", u"An\u00e0lisis direcci\u00f2n mercado", None))
         self.direcciNMercadoLabel.setText(QCoreApplication.translate("MainWindow", u"Direcci\u00f2n mercado", None))
         self.cambioPorcentualLabel.setText(QCoreApplication.translate("MainWindow", u"cambio porcentual", None))
+        self.coin.setText(QCoreApplication.translate("MainWindow", u"Coin", None))
         self.addNew.setText(QCoreApplication.translate("MainWindow", u"Add new tarde", None))
         ___qtablewidgetitem = self.table.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Fecha", None));
@@ -666,9 +679,9 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem5 = self.table.horizontalHeaderItem(5)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"sma_14", None));
         ___qtablewidgetitem6 = self.table.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Volumen operaciones", None));
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Patrones vela", None));
         ___qtablewidgetitem7 = self.table.horizontalHeaderItem(7)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Patrones vela", None));
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Volumen operaciones", None));
         ___qtablewidgetitem8 = self.table.horizontalHeaderItem(8)
         ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"N Soporte/Resistencia", None));
         ___qtablewidgetitem9 = self.table.horizontalHeaderItem(9)
@@ -679,6 +692,8 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Direcci\u00f2n mercado", None));
         ___qtablewidgetitem12 = self.table.horizontalHeaderItem(12)
         ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Cambio porcentual", None));
+        ___qtablewidgetitem13 = self.table.horizontalHeaderItem(13)
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Coin", None));
         self.groupBox_buttons.setTitle(QCoreApplication.translate("MainWindow", u"Manage Data", None))
         self.loadData.setText(QCoreApplication.translate("MainWindow", u"Load Data", None))
         self.callData.setText(QCoreApplication.translate("MainWindow", u"Extrac Data", None))
